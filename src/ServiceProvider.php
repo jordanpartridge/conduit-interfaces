@@ -6,6 +6,8 @@ namespace JordanPartridge\ConduitInterfaces;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use JordanPartridge\ConduitInterfaces\Commands\InitCommand;
+use JordanPartridge\ConduitInterfaces\Commands\ExampleCommand;
+use JordanPartridge\ConduitInterfaces\Commands\BrowseInterfacesCommand;
 
 class ServiceProvider extends BaseServiceProvider
 {
@@ -18,7 +20,9 @@ class ServiceProvider extends BaseServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                InitCommand::class
+                InitCommand::class,
+                ExampleCommand::class,
+                BrowseInterfacesCommand::class,
             ]);
         }
     }
