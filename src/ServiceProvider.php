@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace JordanPartridge\ConduitInterfaces;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use JordanPartridge\ConduitInterfaces\Commands\InitCommand;
-use JordanPartridge\ConduitInterfaces\Commands\ExampleCommand;
 use JordanPartridge\ConduitInterfaces\Commands\BrowseInterfacesCommand;
+use JordanPartridge\ConduitInterfaces\Commands\ExampleCommand;
+use JordanPartridge\ConduitInterfaces\Commands\InitCommand;
 
 class ServiceProvider extends BaseServiceProvider
 {

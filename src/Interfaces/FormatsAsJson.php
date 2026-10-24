@@ -6,7 +6,7 @@ namespace JordanPartridge\ConduitInterfaces\Interfaces;
 
 /**
  * Interface for commands that can format output as JSON
- * 
+ *
  * Part of the universal output format system (Issue #85)
  */
 interface FormatsAsJson
