@@ -298,6 +298,23 @@ def render(sections, head, tail):
     return "\n\n".join(b for b in blocks if b)
 
 
+def machine_footer(sha):
+    """Fixed trailer, kept out of section trimming. Same four fields every post.
+
+    repo: {repo}
+    version: {version}
+    commit: {commit}
+    url: {url}
+    """
+    if URL:
+        link = URL
+    elif sha:
+        link = f"https://github.com/{REPO}/commit/{sha}"
+    else:
+        link = f"https://github.com/{REPO}/releases/tag/{TAG}"
+    return f"repo: {REPO}\nversion: {TAG}\ncommit: {sha or ''}\nurl: {link}"
+
+
 def main():
     sha = tag_sha()
     prev = previous_tag()
@@ -308,7 +325,8 @@ def main():
     sections = [patch_notes(commits, prs), tests(sha) if sha else ("Tests:", []), acceptance(prs), rev, chg,
                 local_pipeline(sha, prs) if sha else ("Local pipeline:", [])]
     head = f"{NAME} {TAG}: {clean(PITCH, 400)}" if PITCH else f"{NAME} {TAG}"
-    tail = "\n".join(x for x in [f"composer require {PACKAGE}" if PACKAGE else "", URL] if x)
+    footer = machine_footer(sha)
+    tail = "\n\n".join(x for x in [f"composer require {PACKAGE}" if PACKAGE else "", footer] if x)
     # trim lowest priority first: changed in review, local pipeline, reviews, AC, tests, patch notes
     order = [4, 5, 3, 2, 1, 0]
     for idx in order:
