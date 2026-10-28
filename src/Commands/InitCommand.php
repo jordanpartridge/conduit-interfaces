@@ -16,7 +16,7 @@ class InitCommand extends Command
     {
         $this->info('🚀 interfaces component is working!');
         $this->line('This is a sample command. Implement your logic here.');
-        
+
         return 0;
     }
 }
