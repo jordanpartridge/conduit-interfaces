@@ -1,0 +1,131 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:getAvailableFormats\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:getOptions\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:outputInteractiveTable\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:outputJson\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:outputSimpleTable\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:outputTable\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\AbstractConduitCommand\\:\\:outputTerminal\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$filename of function file_put_contents expects string, array\\|string\\|true given\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$headers of function Laravel\\\\Prompts\\\\table expects array\\<int, array\\<int, string\\>\\|string\\>\\|Illuminate\\\\Support\\\\Collection\\<int, array\\<int, string\\>\\|string\\>, array\\<int, int\\|string\\> given\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of method Illuminate\\\\Console\\\\Command\\:\\:line\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Parameter \\#2 \\$rows of function Laravel\\\\Prompts\\\\table expects array\\<int, array\\<int, string\\>\\>\\|Illuminate\\\\Support\\\\Collection\\<int, array\\<int, string\\>\\>\\|null, array\\<array\\<int, T\\>\\> given\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Part \\$this\\-\\>option\\('output'\\) \\(non\\-empty\\-array\\|non\\-falsy\\-string\\|true\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/AbstractConduitCommand.php
+
+		-
+			message: "#^Match expression does not handle remaining values\\: int\\|string$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\BrowseInterfacesCommand\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\BrowseInterfacesCommand\\:\\:outputTerminal\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\BrowseInterfacesCommand\\:\\:runInteractiveMode\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\BrowseInterfacesCommand\\:\\:showDetailedView\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\BrowseInterfacesCommand\\:\\:showFiles\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/BrowseInterfacesCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\ExampleCommand\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/ExampleCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Commands\\\\ExampleCommand\\:\\:outputTerminal\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Commands/ExampleCommand.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Interfaces\\\\DisplaysData\\:\\:getAvailableFormats\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Interfaces/DisplaysData.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Interfaces\\\\DisplaysData\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Interfaces/DisplaysData.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Interfaces\\\\DisplaysData\\:\\:outputTable\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Interfaces/DisplaysData.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Interfaces\\\\DisplaysData\\:\\:outputTerminal\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Interfaces/DisplaysData.php
+
+		-
+			message: "#^Method JordanPartridge\\\\ConduitInterfaces\\\\Interfaces\\\\FormatsAsJson\\:\\:outputJson\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Interfaces/FormatsAsJson.php
